@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background: rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+}
+
+/* nav-bar starter */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.508);
+    position: sticky;
+    top: 0;
+    z-index: 300;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.nav-left .fa-solid {
+    font-size: 20px;
+
+}
+
+.nav-left .fa-brands {
+    font-size: 36px;
+    color: blue;
+    cursor: pointer;
+
+}
+
+.nav-middle {
+    display: flex;
+    align-content: center;
+    gap: 50px;
+}
+
+.nav-middle .fa-solid,
+.nav-middle .fa-regular {
+    font-size: 20px;
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-right .fa-solid {
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav-right img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* nav-bar end */
+
+/* body content */
+.left-side-bar-content {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 20px;
+    padding-left: 5px;
+    margin: 0 10px;
+
+}
+
+.left-side-bar {
+    flex-basis: 20%;
+    position: fixed;
+    top: 70px;
+    left: 20px;
+}
+
+/* Middle bar */
+
+.middle-bar {
+
+    scroll-behavior: smooth;
+    position: absolute;
+    width: 50%;
+    left: 23%;
+    top: 70px;
+
+}
+
+.top-bar-mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top-bar-mid .stories,
+.top-bar-mid .reels {
+    display: flex;
+    align-items: center;
+
+}
+
+.stories {}
+
+.stories .fa-solid,
+.stories p {
+    color: blue;
+}
+
+.stories,
+.reels {
+    gap: 10px;
+    display: flex;
+}
+
+.top-bar-mid {
+    padding-bottom: 20px;
+}
+
+.top-bar-mid .fa-solid {
+    font-size: 24px;
+}
+
+.right-side-bar {
+    /* flex-basis: 24%;
+    position: fixed;
+    top: 70px;
+    right: 20px; */
+    height: 50vh;
+    z-index: 300;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+    margin-top: 20px;
+
+}
+
+.top-stories {
+    width: 100%;
+}
+
+.row .col {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    padding: 6px;
+    position: relative;
+}
+
+.col img {
+    width: 130px;
+    height: 23vh;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.col .fa-sharp {
+    font-size: 21px;
+    transform: translateX(-50%, -50%);
+    position: absolute;
+    bottom: 30px;
+    left: 40%;
+    color: white;
+    background: blue;
+    border-radius: 50%;
+    padding: 6px;
+    box-shadow: 2px 2px white,
+        -2px -2px white;
+
+    margin-bottom: 10px;
+}
+
+.left-side-bar-content img {
+    width: 24px;
+    height: 24px;
+
+}
+
+.col p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.col img:nth-child(2) {
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 3px;
+    background: blue;
+}
+
+.col-2 p:nth-child(3) {
+    position: absolute;
+    bottom: 40px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 6px;
+}
+
+.col-2 img {
+    height: 30vh;
+    width: 130px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px 0;
+    display: flex;
+    width: 100%;
+    align-items: space-between;
+    position: relative;
+}
+
+.left-side-bar-content p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.img1 img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+
+}
+
+/* What is on your mind */
+.timelines,
+.posts {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+
+}
+
+.timeline img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+input {
+    width: 90%;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+.feelings {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.feeling {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feeling img {
+    width: 26px;
+}
+
+/* post section */
+.posts {
+    padding: 0;
+}
+
+.post img:nth-child(1) {
+    width: 100%;
+    height: 100%;
+}
+
+.post-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.post-detail-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.post-detail-section img:nth-child(1) {
+    width: 30px;
+    cursor: pointer;
+}
+
+.post-detail-section p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.post-bar {
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.post-bar div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.post-bar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.post-bar p {
+    margin-bottom: 10px;
+}
+
+/* right-side-bar */
+.right-side-bar {
+    margin-left: 10px;
+    z-index: 100;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    margin-right: 10px;
+}
+
+.right-side-bar .friend-request {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    cursor: pointer;
+}
+
+.right-side-bar .friend-request a {
+    text-decoration: none;
+    color: blue;
+}
+
+.friend-detail {
+    display: flex;
+    align-items: flex-start;
+}
+
+.left-details p,
+.friend-request p {
+    font-size: 18px;
+}
+
+.friend-detail .fa-user {
+    font-size: 34px;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.199);
+    color: white;
+}
+
+.left-details p {
+    font-size: 18px;
+}
+
+.mutual-friends {
+    display: flex;
+    align-items: center;
+    margin: 10px 6px;
+    gap: 3px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buttons button:nth-child(1) {
+    background-color: blue;
+    color: #fff;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.buttons button:nth-child(2) {
+    background-color: grey;
+    color: #000;
+    cursor: pointer;
+}
+
+.buttons button {
+    padding: 10px 30px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.friends-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.friends-top p {
+    font-size: 24px;
+}
+
+.contact-icon {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon .fa-solid {
+    font-size: 14px;
+}
+
+/* profile section */
+.profile {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cover-photo {
+    width: 70%;
+    height: 50vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    border-radius: 10px;
+    position: relative;
+}
+
+.btn button:nth-child(1) {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.508);
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+
+.btn button:nth-child(2) {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.508);
+    border-radius: 6px;
+    outline: none;
+    border: none;
+
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 30px 50px;
+}
+
+.profile-detail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-detail img {
+    border-radius: 50%;
+}
+
+.profile-detail div {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-detail p {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+
+.profile-detail h6 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.add-story-btn .btns {
+    gap: 10px;
+    display: flex;
+}
+
+.add-story-btn .btns button {
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.add-story-btn .btns button:nth-child(1) {
+    color: #fff;
+    background: blue;
+
+}
+
+.add-story-btn .btns button:nth-child(2) {
+    color: #000;
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.intro-left {
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.intro-left h4 {
+    text-align: left;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+.intro p {
+    font-weight: bold;
+}
+
+.intro img {
+    border-radius: 50%;
+}
+
+.intro button {
+    padding: 7px 20px;
+    color: black;
+    width: 100%;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.intro-right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+
+.intro-right img {
+    border-radius: 0;
+    width: 20px;
+    margin: 0 10px;
+}
+
+.intro-right .timeline img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.intro-right .posts .post-bar div img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.intro-right .posts .post-bar p {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.intro-right .post>:nth-child(1) {
+    width: 100%;
+    padding: 20px;
+    margin-left: -1px;
+}
+
+/* Friend request section */
+.friend-request-section {
+    display: grid;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.friend-request-section .friend-detail {
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.friend-request-section .friend-detail p {
+    text-align: center;
+}
+
+.friend-request-section .friend-detail img {
+    width: 80%;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 6px;
+}
+
+.friend-request-section .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.friend-request-section .buttons button {
+    padding: 10px 30px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+/* Media Queries */
+@media(max-width:900px) {
+
+    .left-side-bar,
+    .right-side-bar {
+        display: none;
+
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        padding: 7px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.508);
+        position: sticky;
+        top: 0;
+        z-index: 300;
+        width: 100%;
+        background-color: #fff;
+        position: fixed;
+        left: 0;
+
+    }
+
+    .fa-cart-plus,
+    .fa-user-group,
+    .fa-cart-plus,
+    .fa-newspaper,
+    .fa-plus {
+        display: none;
+    }
+
+    .friend-request-section {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-middle {
+        display: flex;
+        align-content: center;
+        gap: 0px;
+    }
+
+    .middle-bar {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        position: absolute;
+        left: 0;
+        top: 70px;
+    }
+
+    .top-stories .row {
+        overflow-x: auto;
+    }
+
+    .timelines,
+    input {
+        width: 100%;
+    }
+
+    .feelings .feeling img {
+        width: 16px;
+    }
+
+    .feelings .feeling p {
+        font-size: 10px;
+    }
+
+    .post .post-detail-section img {
+        width: 20px;
+    }
+    .profile-details{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .intro{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .cover-photo, .profile-details, .intro {
+        width: 100%;
+        
+    }
+    .intro .poster img:nth-child(1){
+        width: 100px;
+    }
+
+}
